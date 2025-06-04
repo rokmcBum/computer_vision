@@ -87,7 +87,7 @@ y_train_enc = le.fit_transform(y_train)
 y_val_enc = le.transform(y_val)
 
 # ====== 8. KNN 훈련 (Task 2용 - Retrieval) ======
-knn = KNeighborsClassifier(n_neighbors=K, metric='cosine')
+knn = KNeighborsClassifier(n_neighbors=K)
 knn.fit(X_train_hog_pca, y_train_enc)
 
 # ====== 9. Top-10 Retrieval 평가 ======

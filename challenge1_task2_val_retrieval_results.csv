@@ -1,0 +1,1031 @@
+TrueLabel,Top10Labels,AllTop10Correct
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Car,Bicycle,False
+Car,Bridge,False
+Car,Car,True
+Bridge,Bridge,True
+Bicycle,Car,False
+Car,Bus,False
+Car,Crosswalk,False
+Car,Car,True
+Palm,Palm,True
+Car,Crosswalk,False
+Bus,Car,False
+Palm,Traffic Light,False
+Bus,Bus,True
+Bicycle,Car,False
+Bicycle,Bus,False
+Car,Bicycle,False
+Car,Car,True
+Car,Car,True
+Traffic Light,Bus,False
+Palm,Bus,False
+Bridge,Car,False
+Bicycle,Crosswalk,False
+Bicycle,Bus,False
+Bus,Crosswalk,False
+Palm,Palm,True
+Palm,Car,False
+Car,Car,True
+Bridge,Traffic Light,False
+Bicycle,Palm,False
+Car,Car,True
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Car,Bus,False
+Palm,Palm,True
+Car,Car,True
+Palm,Hydrant,False
+Bus,Hydrant,False
+Car,Crosswalk,False
+Bus,Bus,True
+Crosswalk,Crosswalk,True
+Bus,Bridge,False
+Car,Car,True
+Bus,Bridge,False
+Bridge,Car,False
+Car,Car,True
+Palm,Palm,True
+Crosswalk,Bicycle,False
+Car,Car,True
+Crosswalk,Car,False
+Chimney,Car,False
+Bicycle,Bus,False
+Car,Crosswalk,False
+Car,Palm,False
+Car,Car,True
+Car,Bus,False
+Hydrant,Car,False
+Car,Car,True
+Bridge,Car,False
+Car,Traffic Light,False
+Car,Car,True
+Hydrant,Car,False
+Palm,Hydrant,False
+Bicycle,Car,False
+Car,Car,True
+Bridge,Car,False
+Bus,Hydrant,False
+Bus,Car,False
+Car,Car,True
+Hydrant,Hydrant,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Car,Car,True
+Car,Car,True
+Car,Bus,False
+Chimney,Hydrant,False
+Crosswalk,Crosswalk,True
+Hydrant,Hydrant,True
+Car,Car,True
+Bus,Bus,True
+Bus,Car,False
+Bicycle,Bus,False
+Crosswalk,Crosswalk,True
+Crosswalk,Traffic Light,False
+Car,Bus,False
+Bridge,Car,False
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Car,Bridge,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Traffic Light,Traffic Light,True
+Traffic Light,Car,False
+Bus,Bus,True
+Car,Car,True
+Bus,Bus,True
+Car,Car,True
+Car,Palm,False
+Bus,Bus,True
+Bus,Crosswalk,False
+Car,Car,True
+Car,Car,True
+Bus,Bridge,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bicycle,Car,False
+Hydrant,Hydrant,True
+Bridge,Bridge,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bicycle,Car,False
+Palm,Car,False
+Crosswalk,Palm,False
+Car,Car,True
+Motorcycle,Palm,False
+Palm,Car,False
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Traffic Light,Car,False
+Car,Hydrant,False
+Bus,Traffic Light,False
+Bicycle,Bus,False
+Traffic Light,Car,False
+Palm,Hydrant,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Palm,Car,False
+Bicycle,Bicycle,True
+Palm,Palm,True
+Crosswalk,Bus,False
+Car,Crosswalk,False
+Car,Car,True
+Bus,Car,False
+Traffic Light,Bridge,False
+Hydrant,Hydrant,True
+Palm,Palm,True
+Car,Car,True
+Chimney,Palm,False
+Traffic Light,Traffic Light,True
+Hydrant,Bicycle,False
+Crosswalk,Bridge,False
+Bicycle,Bicycle,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Bicycle,Hydrant,False
+Palm,Bridge,False
+Palm,Chimney,False
+Car,Car,True
+Bus,Car,False
+Motorcycle,Traffic Light,False
+Bus,Car,False
+Bus,Bus,True
+Car,Car,True
+Car,Car,True
+Bus,Bus,True
+Bicycle,Bicycle,True
+Traffic Light,Car,False
+Bus,Car,False
+Traffic Light,Bridge,False
+Bus,Bus,True
+Car,Bridge,False
+Traffic Light,Car,False
+Bus,Car,False
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Hydrant,Palm,False
+Car,Car,True
+Car,Car,True
+Car,Bicycle,False
+Car,Car,True
+Bus,Palm,False
+Motorcycle,Crosswalk,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Hydrant,Car,False
+Palm,Palm,True
+Bus,Motorcycle,False
+Car,Palm,False
+Car,Bus,False
+Bicycle,Bicycle,True
+Traffic Light,Traffic Light,True
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Crosswalk,Crosswalk,True
+Palm,Palm,True
+Car,Car,True
+Car,Car,True
+Bus,Bus,True
+Bicycle,Bridge,False
+Crosswalk,Crosswalk,True
+Crosswalk,Car,False
+Motorcycle,Car,False
+Car,Car,True
+Car,Car,True
+Car,Hydrant,False
+Crosswalk,Crosswalk,True
+Bus,Traffic Light,False
+Bridge,Crosswalk,False
+Traffic Light,Car,False
+Crosswalk,Crosswalk,True
+Traffic Light,Car,False
+Bus,Bridge,False
+Palm,Bus,False
+Hydrant,Hydrant,True
+Traffic Light,Traffic Light,True
+Bicycle,Hydrant,False
+Car,Car,True
+Bicycle,Crosswalk,False
+Traffic Light,Car,False
+Palm,Car,False
+Hydrant,Hydrant,True
+Motorcycle,Car,False
+Bridge,Bridge,True
+Traffic Light,Car,False
+Bridge,Hydrant,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Palm,Traffic Light,False
+Crosswalk,Car,False
+Car,Car,True
+Bus,Bus,True
+Hydrant,Bus,False
+Bus,Bus,True
+Bridge,Bridge,True
+Traffic Light,Traffic Light,True
+Chimney,Car,False
+Bridge,Hydrant,False
+Hydrant,Bus,False
+Traffic Light,Palm,False
+Crosswalk,Crosswalk,True
+Car,Traffic Light,False
+Bridge,Bridge,True
+Hydrant,Traffic Light,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bridge,Hydrant,False
+Bicycle,Bicycle,True
+Car,Car,True
+Bicycle,Hydrant,False
+Car,Car,True
+Car,Crosswalk,False
+Palm,Chimney,False
+Motorcycle,Hydrant,False
+Hydrant,Palm,False
+Bridge,Bridge,True
+Car,Car,True
+Traffic Light,Car,False
+Car,Car,True
+Bridge,Bridge,True
+Car,Car,True
+Car,Bus,False
+Car,Car,True
+Car,Car,True
+Palm,Palm,True
+Hydrant,Hydrant,True
+Car,Car,True
+Car,Crosswalk,False
+Palm,Palm,True
+Bus,Car,False
+Motorcycle,Hydrant,False
+Crosswalk,Crosswalk,True
+Car,Bridge,False
+Car,Bus,False
+Bus,Car,False
+Hydrant,Hydrant,True
+Car,Car,True
+Car,Bridge,False
+Palm,Bus,False
+Palm,Palm,True
+Crosswalk,Car,False
+Hydrant,Motorcycle,False
+Car,Bus,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Bicycle,Traffic Light,False
+Car,Hydrant,False
+Palm,Car,False
+Car,Car,True
+Bicycle,Bicycle,True
+Bicycle,Bus,False
+Traffic Light,Palm,False
+Bus,Bus,True
+Car,Crosswalk,False
+Crosswalk,Crosswalk,True
+Crosswalk,Crosswalk,True
+Bicycle,Bicycle,True
+Traffic Light,Car,False
+Bus,Hydrant,False
+Car,Bridge,False
+Car,Traffic Light,False
+Car,Car,True
+Palm,Traffic Light,False
+Hydrant,Bus,False
+Bus,Bus,True
+Car,Bus,False
+Bus,Car,False
+Car,Bus,False
+Car,Car,True
+Crosswalk,Palm,False
+Car,Traffic Light,False
+Car,Crosswalk,False
+Bus,Car,False
+Bridge,Chimney,False
+Bicycle,Bicycle,True
+Palm,Traffic Light,False
+Car,Traffic Light,False
+Motorcycle,Hydrant,False
+Traffic Light,Car,False
+Bicycle,Bridge,False
+Car,Car,True
+Hydrant,Hydrant,True
+Traffic Light,Bus,False
+Bridge,Car,False
+Car,Car,True
+Hydrant,Palm,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bus,Car,False
+Car,Crosswalk,False
+Bus,Crosswalk,False
+Hydrant,Palm,False
+Hydrant,Hydrant,True
+Car,Car,True
+Hydrant,Bus,False
+Hydrant,Hydrant,True
+Crosswalk,Motorcycle,False
+Car,Car,True
+Traffic Light,Crosswalk,False
+Crosswalk,Bus,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Palm,Crosswalk,False
+Bus,Traffic Light,False
+Palm,Palm,True
+Bridge,Car,False
+Crosswalk,Crosswalk,True
+Crosswalk,Palm,False
+Car,Car,True
+Bus,Bridge,False
+Bus,Bicycle,False
+Car,Car,True
+Traffic Light,Traffic Light,True
+Bus,Crosswalk,False
+Car,Car,True
+Car,Car,True
+Car,Bicycle,False
+Hydrant,Car,False
+Traffic Light,Traffic Light,True
+Crosswalk,Crosswalk,True
+Crosswalk,Car,False
+Car,Car,True
+Car,Traffic Light,False
+Car,Car,True
+Crosswalk,Palm,False
+Car,Car,True
+Bridge,Bus,False
+Traffic Light,Hydrant,False
+Bridge,Car,False
+Hydrant,Hydrant,True
+Car,Bus,False
+Crosswalk,Bicycle,False
+Car,Car,True
+Bicycle,Car,False
+Hydrant,Hydrant,True
+Palm,Traffic Light,False
+Bus,Traffic Light,False
+Crosswalk,Car,False
+Bus,Bus,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Bus,Car,False
+Hydrant,Hydrant,True
+Bicycle,Hydrant,False
+Palm,Palm,True
+Palm,Car,False
+Bus,Car,False
+Bus,Bus,True
+Crosswalk,Crosswalk,True
+Bus,Car,False
+Traffic Light,Traffic Light,True
+Traffic Light,Car,False
+Crosswalk,Crosswalk,True
+Bicycle,Bus,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Bus,Car,False
+Car,Car,True
+Car,Palm,False
+Car,Palm,False
+Car,Traffic Light,False
+Bridge,Car,False
+Traffic Light,Car,False
+Car,Car,True
+Hydrant,Bus,False
+Bridge,Bus,False
+Palm,Bicycle,False
+Hydrant,Palm,False
+Crosswalk,Crosswalk,True
+Bridge,Bridge,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Car,Bridge,False
+Car,Car,True
+Car,Car,True
+Hydrant,Bridge,False
+Palm,Palm,True
+Car,Car,True
+Bus,Bus,True
+Bicycle,Hydrant,False
+Bus,Bus,True
+Car,Car,True
+Car,Palm,False
+Bus,Hydrant,False
+Car,Hydrant,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Hydrant,Hydrant,True
+Hydrant,Bus,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Car,Car,True
+Car,Bridge,False
+Bus,Bicycle,False
+Car,Car,True
+Traffic Light,Hydrant,False
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Car,Hydrant,False
+Car,Traffic Light,False
+Bicycle,Bicycle,True
+Palm,Hydrant,False
+Car,Bus,False
+Bus,Bicycle,False
+Bus,Bus,True
+Bridge,Bus,False
+Palm,Palm,True
+Palm,Bus,False
+Car,Car,True
+Car,Car,True
+Car,Bus,False
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Car,Car,True
+Bus,Car,False
+Hydrant,Hydrant,True
+Bus,Bus,True
+Bicycle,Bus,False
+Palm,Palm,True
+Car,Hydrant,False
+Car,Car,True
+Bus,Car,False
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Traffic Light,Bus,False
+Bus,Car,False
+Car,Car,True
+Bus,Car,False
+Car,Crosswalk,False
+Car,Bus,False
+Bicycle,Palm,False
+Car,Car,True
+Car,Car,True
+Bridge,Bridge,True
+Hydrant,Palm,False
+Crosswalk,Crosswalk,True
+Crosswalk,Car,False
+Bus,Car,False
+Hydrant,Car,False
+Hydrant,Hydrant,True
+Hydrant,Traffic Light,False
+Car,Car,True
+Bicycle,Bus,False
+Car,Bus,False
+Car,Bus,False
+Car,Crosswalk,False
+Traffic Light,Bus,False
+Bicycle,Bicycle,True
+Car,Crosswalk,False
+Bus,Crosswalk,False
+Car,Car,True
+Bicycle,Car,False
+Palm,Traffic Light,False
+Crosswalk,Crosswalk,True
+Palm,Car,False
+Crosswalk,Bus,False
+Palm,Car,False
+Car,Bus,False
+Bus,Palm,False
+Hydrant,Hydrant,True
+Car,Car,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Palm,Palm,True
+Motorcycle,Palm,False
+Traffic Light,Traffic Light,True
+Crosswalk,Crosswalk,True
+Crosswalk,Car,False
+Palm,Palm,True
+Car,Car,True
+Bridge,Bus,False
+Bicycle,Traffic Light,False
+Car,Traffic Light,False
+Bridge,Bus,False
+Car,Bicycle,False
+Bridge,Car,False
+Bus,Bus,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bus,Bus,True
+Crosswalk,Bus,False
+Car,Bus,False
+Bicycle,Bicycle,True
+Crosswalk,Crosswalk,True
+Palm,Hydrant,False
+Car,Palm,False
+Traffic Light,Chimney,False
+Hydrant,Hydrant,True
+Bicycle,Motorcycle,False
+Hydrant,Hydrant,True
+Car,Crosswalk,False
+Crosswalk,Crosswalk,True
+Bicycle,Hydrant,False
+Crosswalk,Car,False
+Bicycle,Bicycle,True
+Bridge,Bus,False
+Bridge,Car,False
+Hydrant,Car,False
+Bus,Bus,True
+Crosswalk,Car,False
+Traffic Light,Bicycle,False
+Traffic Light,Car,False
+Bicycle,Car,False
+Hydrant,Hydrant,True
+Bridge,Bridge,True
+Traffic Light,Palm,False
+Car,Bus,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Hydrant,Car,False
+Car,Hydrant,False
+Car,Car,True
+Palm,Palm,True
+Bus,Palm,False
+Bus,Traffic Light,False
+Crosswalk,Car,False
+Bus,Bus,True
+Bicycle,Hydrant,False
+Traffic Light,Palm,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Hydrant,False
+Car,Car,True
+Hydrant,Palm,False
+Bicycle,Palm,False
+Traffic Light,Traffic Light,True
+Hydrant,Hydrant,True
+Traffic Light,Traffic Light,True
+Hydrant,Hydrant,True
+Palm,Crosswalk,False
+Bus,Car,False
+Bicycle,Traffic Light,False
+Hydrant,Palm,False
+Hydrant,Hydrant,True
+Car,Bridge,False
+Car,Palm,False
+Car,Car,True
+Car,Car,True
+Bridge,Car,False
+Traffic Light,Palm,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Traffic Light,Bus,False
+Traffic Light,Car,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Car,Hydrant,False
+Motorcycle,Hydrant,False
+Bicycle,Palm,False
+Bridge,Traffic Light,False
+Hydrant,Chimney,False
+Car,Car,True
+Traffic Light,Traffic Light,True
+Crosswalk,Crosswalk,True
+Palm,Hydrant,False
+Bicycle,Bicycle,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Bus,Bridge,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bicycle,Bicycle,True
+Car,Bridge,False
+Palm,Car,False
+Car,Hydrant,False
+Car,Car,True
+Car,Hydrant,False
+Palm,Bicycle,False
+Car,Crosswalk,False
+Car,Car,True
+Car,Hydrant,False
+Palm,Palm,True
+Car,Car,True
+Bicycle,Hydrant,False
+Car,Car,True
+Bicycle,Crosswalk,False
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Car,Car,True
+Bus,Car,False
+Car,Crosswalk,False
+Bus,Bridge,False
+Crosswalk,Bus,False
+Car,Car,True
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Palm,Car,False
+Car,Crosswalk,False
+Hydrant,Hydrant,True
+Car,Car,True
+Palm,Crosswalk,False
+Crosswalk,Crosswalk,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Hydrant,Hydrant,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Bus,Bus,True
+Bicycle,Bus,False
+Car,Car,True
+Crosswalk,Car,False
+Palm,Palm,True
+Bridge,Car,False
+Bridge,Car,False
+Car,Car,True
+Hydrant,Hydrant,True
+Hydrant,Palm,False
+Hydrant,Motorcycle,False
+Hydrant,Chimney,False
+Bus,Hydrant,False
+Crosswalk,Crosswalk,True
+Bridge,Bridge,True
+Car,Car,True
+Hydrant,Bridge,False
+Hydrant,Bus,False
+Bridge,Hydrant,False
+Bus,Bus,True
+Palm,Palm,True
+Traffic Light,Car,False
+Car,Traffic Light,False
+Car,Car,True
+Traffic Light,Hydrant,False
+Hydrant,Hydrant,True
+Bus,Crosswalk,False
+Traffic Light,Traffic Light,True
+Car,Car,True
+Hydrant,Car,False
+Car,Bus,False
+Car,Bicycle,False
+Traffic Light,Chimney,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Car,Car,True
+Car,Car,True
+Bicycle,Car,False
+Car,Car,True
+Palm,Bridge,False
+Bus,Palm,False
+Bus,Car,False
+Car,Crosswalk,False
+Bus,Bus,True
+Hydrant,Hydrant,True
+Car,Car,True
+Traffic Light,Bus,False
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Bicycle,Bus,False
+Traffic Light,Chimney,False
+Car,Car,True
+Palm,Traffic Light,False
+Palm,Hydrant,False
+Traffic Light,Palm,False
+Bus,Crosswalk,False
+Palm,Car,False
+Bus,Bus,True
+Bus,Traffic Light,False
+Car,Car,True
+Car,Car,True
+Hydrant,Hydrant,True
+Hydrant,Car,False
+Bridge,Bridge,True
+Car,Bicycle,False
+Crosswalk,Car,False
+Bridge,Bridge,True
+Crosswalk,Hydrant,False
+Bicycle,Hydrant,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Hydrant,Crosswalk,False
+Car,Bridge,False
+Bridge,Bridge,True
+Car,Crosswalk,False
+Palm,Palm,True
+Palm,Palm,True
+Crosswalk,Bridge,False
+Car,Bus,False
+Bicycle,Bus,False
+Car,Crosswalk,False
+Traffic Light,Bus,False
+Bicycle,Bus,False
+Bus,Crosswalk,False
+Car,Car,True
+Bridge,Bus,False
+Palm,Palm,True
+Palm,Palm,True
+Traffic Light,Bicycle,False
+Palm,Traffic Light,False
+Car,Car,True
+Car,Crosswalk,False
+Traffic Light,Car,False
+Bridge,Traffic Light,False
+Palm,Bus,False
+Car,Car,True
+Car,Traffic Light,False
+Crosswalk,Crosswalk,True
+Palm,Crosswalk,False
+Bus,Car,False
+Car,Car,True
+Traffic Light,Car,False
+Traffic Light,Car,False
+Bus,Car,False
+Traffic Light,Car,False
+Traffic Light,Car,False
+Car,Crosswalk,False
+Car,Car,True
+Hydrant,Hydrant,True
+Traffic Light,Bicycle,False
+Crosswalk,Car,False
+Bus,Car,False
+Car,Car,True
+Car,Car,True
+Bridge,Bridge,True
+Crosswalk,Car,False
+Crosswalk,Car,False
+Car,Traffic Light,False
+Car,Car,True
+Car,Car,True
+Car,Bicycle,False
+Hydrant,Hydrant,True
+Traffic Light,Bus,False
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Bicycle,Bicycle,True
+Car,Palm,False
+Hydrant,Crosswalk,False
+Bus,Car,False
+Car,Bridge,False
+Car,Car,True
+Bus,Bridge,False
+Car,Car,True
+Palm,Palm,True
+Traffic Light,Hydrant,False
+Car,Car,True
+Bicycle,Bicycle,True
+Bus,Bicycle,False
+Car,Car,True
+Car,Car,True
+Car,Bus,False
+Bicycle,Hydrant,False
+Crosswalk,Bus,False
+Traffic Light,Traffic Light,True
+Hydrant,Hydrant,True
+Crosswalk,Car,False
+Bus,Car,False
+Bus,Palm,False
+Traffic Light,Traffic Light,True
+Car,Bridge,False
+Palm,Palm,True
+Bus,Bus,True
+Crosswalk,Car,False
+Bicycle,Bicycle,True
+Bicycle,Bicycle,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Car,Car,True
+Bicycle,Crosswalk,False
+Car,Car,True
+Car,Car,True
+Bridge,Car,False
+Traffic Light,Car,False
+Bus,Car,False
+Hydrant,Hydrant,True
+Crosswalk,Car,False
+Car,Car,True
+Bus,Bus,True
+Car,Car,True
+Car,Car,True
+Traffic Light,Palm,False
+Bicycle,Bicycle,True
+Car,Crosswalk,False
+Bus,Bicycle,False
+Car,Car,True
+Car,Car,True
+Palm,Palm,True
+Traffic Light,Palm,False
+Hydrant,Car,False
+Hydrant,Hydrant,True
+Bus,Bus,True
+Traffic Light,Car,False
+Bicycle,Traffic Light,False
+Bus,Car,False
+Traffic Light,Car,False
+Hydrant,Car,False
+Traffic Light,Car,False
+Car,Car,True
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Car,Crosswalk,False
+Crosswalk,Crosswalk,True
+Car,Car,True
+Hydrant,Hydrant,True
+Car,Bus,False
+Car,Bicycle,False
+Car,Car,True
+Hydrant,Hydrant,True
+Palm,Car,False
+Palm,Car,False
+Bridge,Car,False
+Car,Car,True
+Bus,Bus,True
+Bicycle,Traffic Light,False
+Car,Car,True
+Car,Car,True
+Car,Palm,False
+Palm,Palm,True
+Car,Palm,False
+Car,Bridge,False
+Palm,Car,False
+Bus,Bus,True
+Traffic Light,Bus,False
+Traffic Light,Hydrant,False
+Car,Bus,False
+Traffic Light,Traffic Light,True
+Car,Bus,False
+Bus,Bus,True
+Bridge,Bridge,True
+Crosswalk,Bus,False
+Car,Car,True
+Car,Car,True
+Palm,Palm,True
+Bicycle,Crosswalk,False
+Bridge,Bus,False
+Car,Traffic Light,False
+Car,Bicycle,False
+Car,Bus,False
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Car,Car,True
+Traffic Light,Traffic Light,True
+Hydrant,Bicycle,False
+Car,Car,True
+Bicycle,Palm,False
+Crosswalk,Car,False
+Bus,Bicycle,False
+Palm,Car,False
+Car,Traffic Light,False
+Bicycle,Bus,False
+Car,Car,True
+Bus,Bus,True
+Traffic Light,Bus,False
+Bus,Palm,False
+Bus,Bus,True
+Car,Bus,False
+Car,Palm,False
+Palm,Car,False
+Bicycle,Bicycle,True
+Hydrant,Crosswalk,False
+Car,Palm,False
+Traffic Light,Traffic Light,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Crosswalk,Car,False
+Car,Car,True
+Car,Traffic Light,False
+Hydrant,Traffic Light,False
+Hydrant,Hydrant,True
+Car,Bus,False
+Car,Crosswalk,False
+Crosswalk,Crosswalk,True
+Hydrant,Crosswalk,False
+Crosswalk,Car,False
+Bus,Car,False
+Bus,Bus,True
+Palm,Hydrant,False
+Car,Bridge,False
+Palm,Palm,True
+Car,Car,True
+Hydrant,Hydrant,True
+Traffic Light,Traffic Light,True
+Car,Bridge,False
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Car,Car,True
+Car,Car,True
+Car,Car,True
+Bridge,Traffic Light,False
+Bicycle,Car,False
+Car,Bus,False
+Bridge,Traffic Light,False
+Car,Car,True
+Car,Bus,False
+Palm,Palm,True
+Palm,Car,False
+Car,Bridge,False
+Palm,Palm,True
+Car,Crosswalk,False
+Car,Traffic Light,False
+Palm,Palm,True
+Crosswalk,Car,False
+Crosswalk,Crosswalk,True
+Chimney,Car,False
+Car,Hydrant,False
+Bus,Bus,True
+Crosswalk,Car,False
+Palm,Bus,False
+Bicycle,Palm,False
+Car,Motorcycle,False
+Bicycle,Car,False
+Car,Hydrant,False
+Crosswalk,Crosswalk,True
+Bus,Bus,True
+Palm,Palm,True
+Car,Bus,False
+Crosswalk,Crosswalk,True
+Car,Bridge,False
+Palm,Palm,True
+Chimney,Traffic Light,False
+Crosswalk,Crosswalk,True
+Traffic Light,Bus,False
+Car,Car,True
+Bus,Traffic Light,False
+Bridge,Car,False
+Traffic Light,Traffic Light,True
+Hydrant,Hydrant,True
+Bus,Car,False
+Crosswalk,Car,False
+Palm,Palm,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Hydrant,Hydrant,True
+Hydrant,Hydrant,True
+Car,Car,True
+Crosswalk,Car,False
+Car,Car,True
+Car,Bus,False
+Bus,Car,False
+Crosswalk,Crosswalk,True
+Palm,Palm,True
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Bus,False
+Crosswalk,Car,False
+Bicycle,Bicycle,True
+Hydrant,Traffic Light,False
+Car,Crosswalk,False
+Crosswalk,Crosswalk,True
+Traffic Light,Car,False
+Car,Car,True
+Hydrant,Hydrant,True
+Bicycle,Bicycle,True
+Car,Bus,False
+Bridge,Car,False
+Hydrant,Hydrant,True
+Car,Car,True
+Hydrant,Hydrant,True
+Bridge,Car,False
+Car,Car,True
+Hydrant,Hydrant,True
+Crosswalk,Crosswalk,True
+Bicycle,Bus,False
+Car,Bridge,False
+Car,Bus,False
+Hydrant,Palm,False
+Palm,Hydrant,False
+Car,Car,True
+Bridge,Bus,False
+Palm,Car,False
+Car,Palm,False
+Car,Palm,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Bicycle,Car,False
+Car,Car,True
+Crosswalk,Crosswalk,True
+Car,Hydrant,False
+Palm,Palm,True
+Traffic Light,Traffic Light,True
+Bus,Car,False
+Bicycle,Crosswalk,False
+Crosswalk,Crosswalk,True
+Bicycle,Bus,False
+Palm,Palm,True
+Bridge,Bus,False

@@ -4,7 +4,7 @@ import os
 import cv2
 import numpy as np
 from skimage.feature import hog, local_binary_pattern
-from sklearn.decomposition import PCA
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler, LabelEncoder
@@ -13,10 +13,9 @@ from tqdm import tqdm
 # ====== 설정 ======
 DATASET_DIR = "Large"
 IMAGE_SIZE = (256, 256)
-HOG_PIXELS_PER_CELL = (16, 16)
-N_COMPONENTS = 50
+HOG_PIXELS_PER_CELL = (32, 32)
 K = 10
-print("IMAGE_SIZE:", IMAGE_SIZE, "HOG:", HOG_PIXELS_PER_CELL, "N_COMPONENTS:", N_COMPONENTS)
+print("IMAGE_SIZE:", IMAGE_SIZE, "HOG:", HOG_PIXELS_PER_CELL)
 
 CLASS_NAMES = [
     'Bicycle', 'Bridge', 'Bus', 'Car', 'Chimney',
@@ -42,7 +41,7 @@ def load_images(folder_path, valid_classes, size=(64, 64)):
     return np.array(images), np.array(labels)
 
 
-# ====== Feature 추출 함수 ======
+# ====== Feature 추출 함수 (HOG + LBP + Histogram) ======
 def extract_combined_features(images, pixels_per_cell=(8, 8)):
     features = []
     for img in tqdm(images, desc="Extracting Features"):
@@ -54,7 +53,7 @@ def extract_combined_features(images, pixels_per_cell=(8, 8)):
             block_norm='L2-Hys'
         )
 
-        # LBP (radius=1, 8-point)
+        # LBP (Local Binary Pattern)
         lbp = local_binary_pattern(img, P=8, R=1, method='uniform')
         (hist_lbp, _) = np.histogram(lbp.ravel(),
                                      bins=np.arange(0, 11),
@@ -62,7 +61,7 @@ def extract_combined_features(images, pixels_per_cell=(8, 8)):
         hist_lbp = hist_lbp.astype("float")
         hist_lbp /= (hist_lbp.sum() + 1e-7)
 
-        # Grayscale histogram (16 bins)
+        # Grayscale Histogram (16 bins)
         hist_gray = cv2.calcHist([img], [0], None, [16], [0, 256])
         hist_gray = cv2.normalize(hist_gray, hist_gray).flatten()
 
@@ -87,25 +86,26 @@ X_train_feat = extract_combined_features(X_train_img, pixels_per_cell=HOG_PIXELS
 X_val_feat = extract_combined_features(X_val_img, pixels_per_cell=HOG_PIXELS_PER_CELL)
 print("Feature shape:", X_train_feat.shape)
 
-# ====== 정규화 + 차원 축소 ======
+# ====== 정규화 ======
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train_feat)
 X_val_scaled = scaler.transform(X_val_feat)
-
-pca = PCA(n_components=N_COMPONENTS)
-X_train_pca = pca.fit_transform(X_train_scaled)
-X_val_pca = pca.transform(X_val_scaled)
 
 # ====== 라벨 인코딩 ======
 le = LabelEncoder()
 y_train_enc = le.fit_transform(y_train)
 y_val_enc = le.transform(y_val)
 
+# ====== LDA 적용 (지도 학습 기반 차원 축소) ======
+lda = LDA(n_components=9)  # 클래스 수 - 1
+X_train_lda = lda.fit_transform(X_train_scaled, y_train_enc)
+X_val_lda = lda.transform(X_val_scaled)
+
 # ====== KNN 학습 및 평가 ======
 knn = KNeighborsClassifier(n_neighbors=K)
-knn.fit(X_train_pca, y_train_enc)
+knn.fit(X_train_lda, y_train_enc)
 
-distances, indices = knn.kneighbors(X_val_pca, n_neighbors=K)
+distances, indices = knn.kneighbors(X_val_lda, n_neighbors=K)
 
 correct_count = 0
 top10_labels_list = []
@@ -120,9 +120,9 @@ for i in range(len(indices)):
         correct_count += 1
 
 top10_accuracy = correct_count / len(indices)
-print(f"Task 2 - Validation Top-10 Retrieval Accuracy: {top10_accuracy * 100:.2f}%")
+print(f"Task 2 - Validation Top-10 Retrieval Accuracy (LDA): {top10_accuracy * 100:.2f}%")
 
-# ====== 결과 저장 ======
+# ====== 결과 저장 ==
 with open('c1_t2_a1.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['QueryImage'] + [f'Top{i + 1}' for i in range(K)])

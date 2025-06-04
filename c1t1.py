@@ -1,8 +1,8 @@
+import csv
 import os
 
 import cv2
 import numpy as np
-import pandas as pd
 from skimage.feature import hog
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
@@ -85,10 +85,9 @@ y_val_pred_labels = le.inverse_transform(y_val_pred)
 accuracy = accuracy_score(y_val_enc, y_val_pred)
 print(f"Validation Top-1 Accuracy: {accuracy * 100:.2f}%")
 
-# ====== 9. 결과 저장 ======
-val_results = pd.DataFrame({
-    "TrueLabel": y_val,
-    "PredictedLabel": y_val_pred_labels
-})
-val_results.to_csv("challenge1_task1_val_predictions_HOG.csv", index=False)
-print("결과 저장 완료: challenge1_task1_val_predictions_HOG.csv")
+with open('c1_t1_a1.csv', 'w') as file:
+    write = csv.writer(file)
+    for i, predict_label in enumerate(y_val_pred_labels):
+        write.writerow([f'query{i + 1:03}.png', predict_label])
+
+print("CSV 저장 완료: c1_t1_a1.csv")

@@ -1,20 +1,23 @@
+import csv
 import os
 
 import cv2
 import numpy as np
-import pandas as pd
 from skimage.feature import hog
+from sklearn.decomposition import PCA
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
 # ====== 설정 ======
 DATASET_DIR = "Large"
 IMAGE_SIZE = (128, 128)
 HOG_PIXELS_PER_CELL = (32, 32)
-K = 1  # Task 2 Retrieval용 Top-10
-print("IMAGE_SIZE:", IMAGE_SIZE, "HOG_PIXELS_PER_CELL:", HOG_PIXELS_PER_CELL, " K : ", K)
+N_COMPONENTS = 100
+K = 10  # Task 2 Retrieval용 Top-10
+print("IMAGE_SIZE:", IMAGE_SIZE, "HOG_PIXELS_PER_CELL:", HOG_PIXELS_PER_CELL, " N_COMPONENTS : ", N_COMPONENTS)
 
 CLASS_NAMES = [
     'Bicycle', 'Bridge', 'Bus', 'Car', 'Chimney',
@@ -69,17 +72,26 @@ X_train_hog = extract_hog_features(X_train_img, pixels_per_cell=HOG_PIXELS_PER_C
 X_val_hog = extract_hog_features(X_val_img, pixels_per_cell=HOG_PIXELS_PER_CELL)
 print("HOG feature shape:", X_train_hog.shape)
 
+scaler = StandardScaler()
+X_train_hog_scaled = scaler.fit_transform(X_train_hog)
+X_val_hog_scaled = scaler.transform(X_val_hog)
+
+# 2. PCA 차원 축소
+pca = PCA(n_components=N_COMPONENTS)  # 실험적으로 50~300 추천
+X_train_hog_pca = pca.fit_transform(X_train_hog_scaled)
+X_val_hog_pca = pca.transform(X_val_hog_scaled)
+
 # ====== 6. 라벨 인코딩 ======
 le = LabelEncoder()
 y_train_enc = le.fit_transform(y_train)
 y_val_enc = le.transform(y_val)
 
 # ====== 8. KNN 훈련 (Task 2용 - Retrieval) ======
-knn = KNeighborsClassifier(n_neighbors=K)
-knn.fit(X_train_hog, y_train_enc)
+knn = KNeighborsClassifier(n_neighbors=K, metric='cosine')
+knn.fit(X_train_hog_pca, y_train_enc)
 
 # ====== 9. Top-10 Retrieval 평가 ======
-distances, indices = knn.kneighbors(X_val_hog, n_neighbors=K)
+distances, indices = knn.kneighbors(X_val_hog_pca, n_neighbors=K)
 
 correct_count = 0
 all_correct_flags = []
@@ -99,13 +111,11 @@ for i in range(len(indices)):
 top10_accuracy = correct_count / len(indices)
 print(f"Task 2 - Validation Top-10 Retrieval Accuracy: {top10_accuracy * 100:.2f}%")
 
-# ====== 10. CSV 저장 (Top-10 라벨 포함) ======
-df = pd.DataFrame({
-    "TrueLabel": y_val,
-    "Top10Labels": top10_labels_list,
-    "AllTop10Correct": all_correct_flags
-})
-df.to_csv("challenge1_task2_val_retrieval_results.csv", index=False)
+with open('c1_t2_a1.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    for i, top10_labels_str in enumerate(top10_labels_list):
+        top10_labels = top10_labels_str.split(',')  # 문자열 → 리스트
+        row = [f'query{i + 1:03}.png'] + top10_labels
+        writer.writerow(row)
 
-print("결과 저장 완료:")
-print("- challenge1_task2_val_retrieval_results.csv")
+print("CSV 저장 완료: c1_t2_a1.csv")

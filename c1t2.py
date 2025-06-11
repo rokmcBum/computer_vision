@@ -105,7 +105,7 @@ X_val_lda = lda.transform(X_val_scaled)
 knn = KNeighborsClassifier(n_neighbors=K)
 knn.fit(X_train_lda, y_train_enc)
 
-distances, indices = knn.kneighbors(X_val_lda, n_neighbors=K)
+indices = knn.kneighbors(X_val_lda, n_neighbors=K, return_distance=False)
 
 correct_count = 0
 top10_labels_list = []
